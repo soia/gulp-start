@@ -15,13 +15,9 @@
         width: 100%;
         margin: 0 auto;
 
-        &_link {
-            text-decoration: none;
-            color: $white;
-            font-family: $mainFont;
-            font-size: 1.1vw;
-            font-weight: $book;
-            line-height: 1.5vw;
+        &_link, {
+            @include link;
+            @include linkHover;
         }
     }
 
@@ -37,20 +33,19 @@
         font-size: 3vw;
         font-weight: $book;
         line-height: 4vw;
-        color: $lightGray;
+        color: $darkGray;
         text-align: center;
 
     }
 
-    &__log-in {
-        color: $white;
-        font-family: $mainFont;
-        font-size: 1.1vw;
-        font-weight: $book;
-        line-height: 1.5vw;
-        text-decoration: none;
+    &__log-in{
         display: block;
         text-align: center;
         padding: 2.5vw 0 2.5vw 0;
+
+        &_link {
+            @include link;
+            @include linkHover;
+        }
     }
 }

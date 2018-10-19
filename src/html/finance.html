@@ -1,0 +1,50 @@
+@@include('modules/html-head.html',{ "bodyClass": "support_body", "pageTitle": "finance" })
+@@include('modules/header.html',{"headerClass": "" })
+<div class="wrapper-finance">
+    <section>
+        <ul class="wrapper-finance__dashboard-list">
+            <li class="wrapper-finance__dashboard-list_item">
+                <div class="wrapper-finance__dashboard-list_h3">Инвестиционный пакет</div>
+                <div class="wrapper-finance__dashboard-list_info"></div>
+            </li>
+            <li class="wrapper-finance__dashboard-list_item">
+                <div class="wrapper-finance__dashboard-list_h3">Сумма инвестиций</div>
+                <div class="wrapper-finance__dashboard-list_info"></div>
+            </li>
+            <li class="wrapper-finance__dashboard-list_item">
+                <div class="wrapper-finance__dashboard-list_h3">Доход с реф. программы</div>
+                <div class="wrapper-finance__dashboard-list_info"></div>
+            </li>
+            <li class="wrapper-finance__dashboard-list_item">
+                <div class="wrapper-finance__dashboard-list_h3">Кол-во токенов</div>
+                <div class="wrapper-finance__dashboard-list_info"></div>
+            </li>
+            <li class="wrapper-finance__dashboard-list_item">
+                <div class="wrapper-finance__dashboard-list_h3">Доход в дивидендах</div>
+                <div class="wrapper-finance__dashboard-list_info"></div>
+            </li>
+            <li class="wrapper-finance__dashboard-list_item">
+                <div class="wrapper-finance__dashboard-list_h3">Коммисия фонда%</div>
+                <div class="wrapper-finance__dashboard-list_info"></div>
+            </li>
+        </ul>
+    </section>
+    <div class="wallet-balance-wrapper">
+        <div class="wallet-balance-wrapper__item">
+            <div class="wallet-balance-wrapper__content">
+                <p class="wallet-balance-wrapper__text">Кошелек для вывода BTC </p>
+                <p class="wallet-balance-wrapper__result"> 1x3f9441mc8k</p>
+            </div>
+            <hr>
+        </div>
+        <div class="wallet-balance-wrapper__item">
+            <div class="wallet-balance-wrapper__content">
+                <p class="wallet-balance-wrapper__text">Баланс</p>
+                <p class="wallet-balance-wrapper__result">$ 1 241 524 340</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+@@include('modules/html-footer.html')

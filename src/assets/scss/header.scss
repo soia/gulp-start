@@ -1,0 +1,79 @@
+.header {
+    background-color: $black;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 6vw;
+    }
+
+    &__logo {
+        width: 7vw;
+        height: 5vw;
+    }
+
+    &__wrapper-menu {
+        transform: translateX(6vw);
+
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+
+            li:not(:last-child) {
+                padding-right: 3vw;
+            }
+        }
+
+        &_link {
+            @include link;
+            @include linkHover;
+            display: inline-block;
+        }
+    }
+
+    &__wrapper-profile {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &_user-info {
+            display: flex;
+            align-items: center;
+
+            *+* {
+                margin-left: 1.3vw;
+            }
+        }
+        
+        &_initials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.6vw;
+            height: 2.6vw;
+            background-color: $colorWheat;
+            border: 1px solid $lightGray;
+            border-radius: 4px;
+            color: $darkGray;
+            transition: all 0.4s;
+            text-decoration: none;
+            font-size: 1.4vw;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $white;
+                color: $white;
+            }
+        }
+
+        &_user-name {
+            @include link;
+            @include linkHover;
+            transition: all 0.4s;
+        }
+    }
+}

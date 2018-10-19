@@ -1,0 +1,58 @@
+.custom_select {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transform: translateX(10vw);
+
+    &.opened {
+        .custom_select__choosen {
+            span {
+                color: $white;
+            }
+        }
+
+        .custom_select__options {
+            max-height: 5vw;
+            position: absolute;
+        }
+
+        .hideOptions {
+            display: block;
+        }
+
+        .showOptions {
+            display: none;
+        }
+    }
+
+    &__choosen {
+        @include link;
+        display: flex;
+
+        * + * {
+            margin-left: 0.5vw;
+        }
+    }
+
+    &__options {
+        max-height: 0;
+        overflow: hidden;
+
+        .custom_select__option {
+            > span {
+                @include link;
+                transition: all 0.4s;
+            }
+
+            &:hover {
+                > span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .hideOptions {
+        display: none;
+    }
+}

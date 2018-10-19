@@ -1,10 +1,15 @@
 // Variables
 $black: #000;
+$bgColorMain: #1e1e1f;
 $white: #fff;
-$lightGray: #444;
+$darkGray: #444;
+$borderColor: #363636;
+$Gray: #252525;
+$blue: #0400d8;
+$lightGray: #979797;
+$colorWheat: #d8d8d8;
 
 $mainFont: "Core Sans G", sans-serif;
-
 
 $demi: 600;
 $book: normal;
@@ -12,23 +17,48 @@ $medium: 500;
 
 // Mixins
 @mixin linkHover {
-    transition: all 0.4s;
+    &:after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 0 auto;
+        height: 0.2vw;
+        background-color: $white;
+        transform: scale(0);
+        transition: -webkit-transform 0.15s;
+        transition: transform 0.15s;
+        transition: transform 0.15s, -webkit-transform 0.15s;
+    }
+
+    &:hover:after {
+        transition: -webkit-transform 0.15s;
+        transition: transform 0.15s;
+        transition: transform 0.15s, -webkit-transform 0.15s;
+        transform: scale(1);
+    }
 
     &:hover {
-        color: #888;
+        transition: background-color 0.3s;
     }
 }
 
-@mixin svgHover {
-    transition: all 0.4s;
+@mixin link {
+    color: $white;
+    font-family: $mainFont;
+    font-size: 1.1vw;
+    font-weight: $book;
+    line-height: 1.5vw;
+    text-decoration: none;
+    position: relative;
+}
 
-    path {
-        transition: all 0.4s;
-    }
-
-    &:hover {
-        path {
-            fill: #ccc;
-        }
-    }
+@mixin title {
+    color: $white;
+    font-family: $mainFont;
+    font-size: 1.2vw;
+    font-weight: $book;
+    line-height: 1.5vw;
 }
