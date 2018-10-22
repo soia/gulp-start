@@ -62,20 +62,7 @@
     }
 
     &__btn  {
-        width: 14vw;
-        height: 4vw;
-        background-color: $blue;
-        border: none;
-        cursor: pointer;
-        font-size: 0.7vw;
-        outline: none;
-        @include link;
-        transition: 0.25s;
-
-        &:hover {
-            background-color: transparent;
-            border: 1px solid $white;
-        }
+        @include btn;
     }
 }
 

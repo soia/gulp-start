@@ -1,3 +1,9 @@
+body {
+    background-color: #1e1e1f;
+}
+
+// custom select
+
 .custom_select {
     border: none;
     background: transparent;
@@ -54,5 +60,44 @@
 
     .hideOptions {
         display: none;
+    }
+}
+
+// upload photo 
+
+.upload-photo {
+    width: 7.2vw;
+    height: 7.2vw;
+    border: 0.15vw solid #363636;
+    margin-right: 3vw;
+    cursor: pointer;
+    transition: all 0.4s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper-svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__svg {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
     }
 }

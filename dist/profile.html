@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>finance</title>
+</head>
+
+<body class="support_body">
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__wrapper-logo">
+            <a href="#">
+                <img src="./assets/img/logo.svg" class="header__logo" alt="logo"></a>
+        </div>
+
+        <div class="header__wrapper-menu">
+            <ul class="header__wrapper-menu_list">
+                <li><a href="#" class="header__wrapper-menu_link">Профиль</a></li>
+                <li><a href="#" class="header__wrapper-menu_link">Финансы</a></li>
+                <li><a href="#" class="header__wrapper-menu_link">Faq</a></li>
+            </ul>
+        </div>
+
+        <div class="custom_select">
+            <div data-choosen="Ru" class="custom_select__choosen toggleSelect selected">
+                <span>Ru</span>
+                <div class="showOptions">
+                    <svg width="10" height="10" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.164551 0.786888H6.1598L3.16744 4.50104L0.164551 0.786888Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="hideOptions">
+                    <svg width="10" height="10" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="store" transform="translate(-43.000000, -41.000000)" fill="#fff">
+                                <g id="menu">
+                                    <g id="Menu" transform="translate(43.000000, 41.000000)">
+                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-315.000000) translate(-9.657321, -9.214342) "></path>
+                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-45.000000) translate(-9.657321, -9.214342) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="custom_select__options">
+                <div data-currency="En" class="custom_select__option selectOption">
+                    <span>En</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__wrapper-profile_user-info">
+            <a href="#" class="header__wrapper-profile_initials">AC</a>
+            <a href="#" class="header__wrapper-profile_user-name">Андрей Стомар </a>
+        </div>
+    </div>
+
+    </div>
+
+</header>
+<div class="wrapper-profile">
+    <section class="wrapper-profile__section">
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="wrapper-profile__personal-information">
+                <h3 class="wrapper-profile__title">Персональные данные</h3>
+                <div class="wrapper-profile__container">
+                    <div id="uploadPhoto" class="upload-photo">
+                        <div class="upload-photo__wrapper-svg">
+                            <svg class="upload-photo__svg" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4259 11.8321L24.1335 11.8321C24.8497 11.8321 25.4304 12.4128 25.4304 13.129C25.4304 13.8453 24.8497 14.4259 24.1335 14.4259H14.4259L14.4259 24.1335C14.4259 24.8497 13.8453 25.4304 13.129 25.4304C12.4128 25.4304 11.8321 24.8497 11.8321 24.1335L11.8321 14.4259H2.12457C1.40832 14.4259 0.827686 13.8453 0.827686 13.129C0.827686 12.4128 1.40832 11.8321 2.12457 11.8321L11.8321 11.8321L11.8321 2.12457C11.8321 1.40832 12.4128 0.827685 13.129 0.827685C13.8453 0.827685 14.4259 1.40832 14.4259 2.12457L14.4259 11.8321Z"
+                                    fill="#0400D8" />
+                            </svg>
+                        </div>
+                        <input type="file" name="" class="upload-photo__input" id="upload">
+                        <img src="" alt="" id="uploadedImage" class="upload-photo__img">
+                    </div>
+                    <div class="wrapper-profile__personal-information_container-input">
+                        <input type="text" placeholder="Имя" class="wrapper-profile__personal-information_input">
+                        <input type="text" placeholder="Фамилия" class="wrapper-profile__personal-information_input">
+                        <input type="mail" placeholder="Почта" class="wrapper-profile__personal-information_input">
+                        <div class="wrapper-profile__container-btn">
+                            <button class="wrapper-profile__btn">Сохранить</button>
+                        </div>
+                    </div>
+                    <div class="wrapper-profile__personal-information_container-input">
+                        <div class="custom_select">
+                            <div data-choosen="Страна" class="custom_select__choosen toggleSelect selected">
+                                <span>Страна</span>
+                                <div class="showOptions">
+                                    <svg width="10" height="10" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.164551 0.786888H6.1598L3.16744 4.50104L0.164551 0.786888Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="hideOptions">
+                                    <svg width="10" height="10" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs></defs>
+                                        <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="store" transform="translate(-43.000000, -41.000000)" fill="#fff">
+                                                <g id="menu">
+                                                    <g id="Menu" transform="translate(43.000000, 41.000000)">
+                                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-315.000000) translate(-9.657321, -9.214342) "></path>
+                                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-45.000000) translate(-9.657321, -9.214342) "></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="custom_select__options">
+                                <div data-currency="Украина" class="custom_select__option selectOption">
+                                    <span>Украина</span>
+                                </div>
+                                <div data-currency="Россия" class="custom_select__option selectOption">
+                                    <span>Россия</span>
+                                </div>
+                                <div data-currency="Израиль" class="custom_select__option selectOption">
+                                    <span>Израиль</span>
+                                </div>
+                                <div data-currency="Австралия" class="custom_select__option selectOption">
+                                    <span>Австралия </span>
+                                </div>
+                                <div data-currency="Австрия" class="custom_select__option selectOption">
+                                    <span>Австрия </span>
+                                </div>
+                                <div data-currency="Азербайджан" class="custom_select__option selectOption">
+                                    <span>Азербайджан </span>
+                                </div>
+                                <div data-currency="Албания" class="custom_select__option selectOption">
+                                    <span>Албания </span>
+                                </div>
+                                <div data-currency="Ангола" class="custom_select__option selectOption">
+                                    <span>Ангола </span>
+                                </div>
+                                <div data-currency="Андорра" class="custom_select__option selectOption">
+                                    <span>Андорра</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom_select">
+                            <div data-choosen="Область" class="custom_select__choosen toggleSelect selected">
+                                <span>Область</span>
+                                <div class="showOptions">
+                                    <svg width="10" height="10" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.164551 0.786888H6.1598L3.16744 4.50104L0.164551 0.786888Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="hideOptions">
+                                    <svg width="10" height="10" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs></defs>
+                                        <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="store" transform="translate(-43.000000, -41.000000)" fill="#fff">
+                                                <g id="menu">
+                                                    <g id="Menu" transform="translate(43.000000, 41.000000)">
+                                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-315.000000) translate(-9.657321, -9.214342) "></path>
+                                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-45.000000) translate(-9.657321, -9.214342) "></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="custom_select__options">
+                                <div data-currency="Днепропетровская" class="custom_select__option selectOption">
+                                    <span>Днепропетровская</span>
+                                </div>
+                                <div data-currency="Киевская" class="custom_select__option selectOption">
+                                    <span>Киевская</span>
+                                </div>
+                                <div data-currency="Донецкая" class="custom_select__option selectOption">
+                                    <span>Донецкая</span>
+                                </div>
+                                <div data-currency="Львовская" class="custom_select__option selectOption">
+                                    <span>Львовская</span>
+                                </div>
+                                <div data-currency="Запорожская" class="custom_select__option selectOption">
+                                    <span>Запорожская</span>
+                                </div>
+                                <div data-currency="Харьковская" class="custom_select__option selectOption">
+                                    <span>Харьковская</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom_select">
+                            <div data-choosen="Город" class="custom_select__choosen toggleSelect selected">
+                                <span>Город</span>
+                                <div class="showOptions">
+                                    <svg width="10" height="10" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.164551 0.786888H6.1598L3.16744 4.50104L0.164551 0.786888Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="hideOptions">
+                                    <svg width="10" height="10" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs></defs>
+                                        <g id="dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="store" transform="translate(-43.000000, -41.000000)" fill="#fff">
+                                                <g id="menu">
+                                                    <g id="Menu" transform="translate(43.000000, 41.000000)">
+                                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-315.000000) translate(-9.657321, -9.214342) "></path>
+                                                        <path d="M-1.54440959,8.38375162 L20.8590523,8.38375162 C21.3177747,8.38375162 21.6896427,8.75561961 21.6896427,9.21434203 L21.6896427,9.21434203 C21.6896427,9.67306445 21.3177747,10.0449324 20.8590523,10.0449324 L-1.54440959,10.0449324 C-2.00313201,10.0449324 -2.375,9.67306445 -2.375,9.21434203 L-2.375,9.21434203 C-2.375,8.75561961 -2.00313201,8.38375162 -1.54440959,8.38375162 Z"
+                                                            id="Rectangle" transform="translate(9.657321, 9.214342) rotate(-45.000000) translate(-9.657321, -9.214342) "></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="custom_select__options">
+                                <div data-currency="Днепропетровская" class="custom_select__option selectOption">
+                                    <span>Днепр</span>
+                                </div>
+                                <div data-currency="Киевская" class="custom_select__option selectOption">
+                                    <span>Киев</span>
+                                </div>
+                                <div data-currency="Донецкая" class="custom_select__option selectOption">
+                                    <span>Донецк</span>
+                                </div>
+                                <div data-currency="Львовская" class="custom_select__option selectOption">
+                                    <span>Львов</span>
+                                </div>
+                                <div data-currency="Запорожская" class="custom_select__option selectOption">
+                                    <span>Запорожье</span>
+                                </div>
+                                <div data-currency="Харьковская" class="custom_select__option selectOption">
+                                    <span>Харьков</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="wrapper-profile__safety">
+                <h3 class="wrapper-profile__title">Безопасность</h3>
+                <div class="wrapper-profile__personal-information_container-input">
+                    <input type="password" placeholder="Новый пароль" class="wrapper-profile__personal-information_input">
+                    <input type="password" placeholder="Новый пароль" class="wrapper-profile__personal-information_input">
+                    <input type="password" placeholder="Повторите новый пароль" class="wrapper-profile__personal-information_input">
+                    <div class="wrapper-profile__container-btn">
+                        <button class="wrapper-profile__btn">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="wrapper-profile__section wrapper-profile__section_wallet">
+        <div class="wrapper-profile__wallet">
+            <h4 class="wrapper-profile__wallet_title">Кoшелек w</h4>
+            <p class="wrapper-profile__wallet_result">w1223487927342as </p>
+        </div>
+        <div class="wrapper-profile__wallet">
+            <h4 class="wrapper-profile__wallet_title">Кoшелек w</h4>
+            <p class="wrapper-profile__wallet_result">w1223487927342as </p>
+        </div>
+        <div class="wrapper-profile__wallet">
+            <h4 class="wrapper-profile__wallet_title">Кoшелек w</h4>
+            <p class="wrapper-profile__wallet_result">w1223487927342as </p>
+        </div>
+    </section>
+</div>
+
+<footer>
+</footer>
+<!-- JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script src="assets/js/scripts.min.js"></script>
+<!-- end JS -->
+</body>
+
+</html>
