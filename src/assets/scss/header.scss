@@ -6,24 +6,23 @@
         justify-content: space-between;
         align-items: center;
         padding: 1vw 6vw;
+        background: radial-gradient(386.12px at 9.59% 77.63%, #171717 0%, #000 100%);
     }
 
     &__logo {
-        width: 7vw;
-        height: 5vw;
+        width: 8.5vw;
+        height: 6.5vw;
     }
 
     &__wrapper-menu {
         transform: translateX(6vw);
+        max-width: 25vw;
+        width: 100%;
 
 
         &_list {
             display: flex;
             justify-content: space-between;
-
-            li:not(:last-child) {
-                padding-right: 3vw;
-            }
         }
 
         &_link {
@@ -43,6 +42,7 @@
         &_user-info {
             display: flex;
             align-items: center;
+            margin-left: 5vw;
 
             *+* {
                 margin-left: 1.3vw;

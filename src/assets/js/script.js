@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
   
-    window.nationalPay = $.extend({}, {
+    window.quantum = $.extend({}, {
       winWidth: $(window).width(),
       winHeight: $(window).height(),
       winScroll: $(window).scrollTop(),
@@ -9,12 +9,12 @@
       modalWindow: $(".modal"),
   
       init: function () {
-        nationalPay.initTableDropdown();
-        nationalPay.initSupportInfo();
-        nationalPay.initUploadPhoto();
-        nationalPay.initCustomSelect();
-        nationalPay.initImageDownload();
-        nationalPay.initImagePreview();
+        quantum.initTableDropdown();
+        quantum.initSupportInfo();
+        quantum.initUploadPhoto();
+        quantum.initCustomSelect();
+        quantum.initImageDownload();
+        quantum.initImagePreview();
       },
       initTableDropdown: function () {
         if (!$(".openSortDropdown").length) return false;
@@ -141,6 +141,6 @@
       },
     });
     $(document).ready(function () {
-      nationalPay.init();
+      quantum.init();
     });
   })(jQuery);

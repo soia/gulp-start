@@ -6,12 +6,13 @@
 
     &__header {
         padding-top: 4vw;
+        background: radial-gradient(386.12px at 48.59% 41.63%, #171717 0%, #000000 100%);
     }
 
     &__menu {
         display: flex;
         justify-content: space-between;
-        max-width: 21vw;
+        max-width: 430px;
         width: 100%;
         margin: 0 auto;
 
@@ -23,13 +24,13 @@
 
     &__logo {
         display: block;
-        margin: 7vw auto 3vw auto;
+        margin: 7vw auto 0 auto;
         width: 17vw;
         height: 16vw;
     }
 
     &__title {
-        font-family: $mainFont;
+        font-family: $extraLightFont;
         font-size: 3vw;
         font-weight: $book;
         line-height: 4vw;
@@ -41,7 +42,7 @@
     &__log-in{
         display: block;
         text-align: center;
-        padding: 2.5vw 0 2.5vw 0;
+        padding: 7vw 0 2.5vw 0;
 
         &_link {
             @include link;
@@ -49,3 +50,4 @@
         }
     }
 }
+
